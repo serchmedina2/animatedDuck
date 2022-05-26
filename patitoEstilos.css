@@ -7,7 +7,10 @@ body {
 div.principal {
     overflow: hidden;
     background-color: rgb(231, 85, 153);
-    border: solid 1px rgb(152, 56, 165);
+    border: 1px solid rgb(152, 56, 165);
+    align-items: center;
+    width: 85%;
+    height:200px;
 }
 .texto {
     overflow: hidden;
@@ -16,5 +19,10 @@ div.principal {
 div.texto p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     size: 1.5em;
+}
+
+@keyframes slide-in{
+    from {transform: translateY(-50%)}
+    to {transform: translateY(0%)}
 }
 
