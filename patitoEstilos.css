@@ -4,6 +4,7 @@ body {
     color: rgb(0, 0, 0);
     justify-content: center;
     display: flex; 
+
     /* animation-fill-mode: ; */
 }
 div.principal {
@@ -12,12 +13,14 @@ div.principal {
     border: 3px solid rgb(132, 33, 145);
     width: 85%;
     height: 350px;
+    display: flex;
     justify-content: center;
-    display: flex; 
 }
 .pato {
+    margin-top:3em;
+}
+.cara {
     display: flex;
-    align-items: center;
 }
 #cabeza {
     background-color: rgb(255, 255, 128);
@@ -25,18 +28,14 @@ div.principal {
     width: 5em;
     height: 5em;
     border-radius: 50%;
-    display: flex;
-    justify-content:end;
-    animation: displace45 forwards 5s;
+    /* animation: displace45 forwards 5s; */
 }
 #ojo {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 0, 0);
-    width: 55%;
-    height:75%;
+    width: 45%;
+    height:55%;
     border-radius: 50%;
-    display: flex;
-    justify-content:end;
 }
 #pupila {
     background-color: rgb(0, 0, 0);
@@ -49,11 +48,13 @@ div.principal {
 #pico {
     width: 0;
     height:0;
-    border-left: 50px solid #f0ad4e;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
+    border-left: 3em solid #f0ad4e;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
     transform:rotate(180deg); 
-    animation: displace45 forwards 5s;
+    margin-top: 1.5em;
+    border-radius: 25px;
+    /*animation: displace45 forwards 5s; */
 }
 .cuerpo {
     background-color: rgb(255, 255, 128);
@@ -66,18 +67,29 @@ div.principal {
 .texto {
     overflow: hidden;
     animation: 3s 3s slide-in;
+    display: flex;
+    align-items: end;
 }
-
+#ala {
+    width: 0;
+    height:0;
+    border-right: 3em solid #f0ad4e;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    margin-left: 2.7em;
+    margin-top: 2em;
+}
 div.texto p {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    size: 1.5em;
+    font-size: 5em;
+    color: rgb(255, 255, 255);
 }
 
 @keyframes slide-in{
     from {transform: translateX(-50%)}
     to {transform: translateX(0%)}
 }
-@keyframes displace45{
-    from {transform: translateX(0%); }
-    to {transform: translateX(100%);  }
-}
+@keyframes movimientoOjo {
+    from {margin-left: 50%;}
+    to {margin-left: 0%;}
+  } 
