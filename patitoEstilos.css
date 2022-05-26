@@ -11,7 +11,33 @@ div.principal {
     background-color: rgb(231, 85, 153);
     border: 3px solid rgb(132, 33, 145);
     width: 85%;
-    height: 200px;
+    height: 350px;
+}
+#cabeza {
+    background-color: rgb(255, 255, 128);
+    border: 3px solid rgb(255, 255, 65);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content:end;
+}
+#ojo {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    width: 55%;
+    height:75%;
+    border-radius: 50%;
+    display: flex;
+    justify-content:end;
+}
+#pupila {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(59, 59, 59);
+    border-radius: 50%;
+    width: 75%;
+    height:65%;
+    border-radius: 50%;
 }
 .texto {
     overflow: hidden;
