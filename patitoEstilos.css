@@ -18,6 +18,7 @@ div.principal {
 }
 .pato {
     margin-top:3em;
+    animation: rotate45 4s infinite alternate ease
 }
 .cara {
     display: flex;
@@ -44,6 +45,7 @@ div.principal {
     width: 75%;
     height:65%;
     border-radius: 50%;
+    animation: movimientoOjo 2s infinite alternate ease;
 }
 #pico {
     width: 0;
@@ -66,7 +68,7 @@ div.principal {
 }
 .texto {
     overflow: hidden;
-    animation: 3s 3s slide-in;
+    animation: 4s slide-in-right;
     display: flex;
     align-items: end;
 }
@@ -85,11 +87,15 @@ div.texto p {
     color: rgb(255, 255, 255);
 }
 
-@keyframes slide-in{
-    from {transform: translateX(-50%)}
+@keyframes slide-in-right{
+    from {transform: translateX(50%)}
     to {transform: translateX(0%)}
 }
 @keyframes movimientoOjo {
-    from {margin-left: 50%;}
+    from {margin-left: 30%;}
     to {margin-left: 0%;}
   } 
+@keyframes rotate45{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(45deg)}
+}
